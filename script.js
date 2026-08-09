@@ -4,6 +4,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const nav = document.querySelector('.nav'); document.querySelector('.menu').addEventListener('click', () => nav.classList.toggle('open')); document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
 // Replace this with your deployed Cloudflare Worker URL. The Worker keeps the Telegram bot token private.
 
+
 const CONTACT_ENDPOINT = 'https://tiny-poetry-24d4.omegat.workers.dev/';
 
 const form = document.getElementById('contactForm');
